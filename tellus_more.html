@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell Us More</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</head>
+
+<body>
+    <Section class="wrapper tellus_more_page">
+        <section class="container display_flex_col tellus_more">
+            <div class="headingdiv">
+                <h1>Tell Us More</h1>
+            </div>
+
+
+
+            <div class="maindiv display_flex">
+
+
+                <div class=" inside_div " id="">
+                    <h2>A. How was your shopping experience?</h2>
+                    <div class="first_div display_flex">
+                        <picture class="shopping_experience">
+                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f603/512.webp"
+                                type="image/webp">
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f603/512.gif" alt="😃 most smiled" width="32"
+                                height="32" alt="most smiled">
+                        </picture>
+                        <picture class="shopping_experience">
+                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.webp"
+                                type="image/webp">
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f642/512.gif" alt="🙂 less smiled" width="32"
+                                height="32" alt="less smiled">
+                        </picture>
+                        <picture class="shopping_experience">
+                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.webp"
+                                type="image/webp">
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f610/512.gif" alt="😐 maybe good" width="32"
+                                height="32" alt="smiled">
+                        </picture>
+                        <picture class="shopping_experience">
+                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.webp"
+                                type="image/webp">
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f614/512.gif" alt="😔 not smiled" width="32"
+                                height="32" alt="not smiled">
+                        </picture>
+                        <picture class="shopping_experience">
+                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.webp"
+                                type="image/webp">
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif" alt="😞 not good" width="32"
+                                height="32" alt="not good">
+                        </picture>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="maindiv display_flex">
+
+
+                <div class=" inside_div ">
+                    <h2>B. Did you get what you wanted?</h2>
+                    <div class="first_div display_flex">
+                        <div>
+                            <input type="radio" class="want" id="wantyes" value="yes" name="wanted">
+                            <label for="wantyes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="want" id="wantno" value="no" name="wanted">
+                            <label for="wantno">No</label>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class=" inside_div ">
+                    <h2>C. Would you like us to contact you for feedback?</h2>
+                    <div class="first_div display_flex">
+                        <!-- <div>
+                            <input type="radio" class="feed_want" id="feedback_wantyes" value="feed_yes" name="feedback_wanted">
+                            <label for="feedback_wantyes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="feed_want" id="feedback_wantno" value="feed_no" name="feedback_wanted">
+                            <label for="feedback_wantno">No</label>
+                        </div> -->
+
+                        <div>
+                            <input type="radio" class="feed_want" id="feedback_wantyes" value="feed_yes"
+                                name="feedback_wanted">
+                            <label for="feedback_wantyes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="feed_want" id="feedback_wantno" value="feed_no"
+                                name="feedback_wanted">
+                            <label for="feedback_wantno">No</label>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="maindiv contactDetails display_flex form">
+
+
+                <div class=" inside_div " id="">
+                    <h2>D. Please enter your contact details</h2>
+                    <div class="first_div display_flex">
+                        <div class="display_flex">
+                            <input type="text" class="user_info" id="user_name" value=" " placeholder="Enter Your Name">
+                            <input type="text" class="user_info" id="user_number" value=" "
+                                placeholder="Enter Your Contact Number">
+                        </div>
+                    </div>
+                    <div class=" buttonDiv display_flex">
+                        <button class="sbmbutton">Submit</button>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+            </div>
+
+
+            <div class="maindiv buttonDiv display_flex" id="no_feedback_submit">
+                <button class="sbmbutton" id="no_feedback_submit_button">Submit</button>
+            </div>
+        </section>
+
+        <section class="fixed_bar display_flex">
+            <img src="Arrow 2.png" class="homeicons" alt="">
+            <img src="homeicon.png" class="homeicons" alt="">
+            <img src="" alt="">
+        </section>
+    </Section>
+
+    <script>
+        // let user_name = document.querySelector("#user_name")
+        // let user_number = document.querySelector("#user_number")
+        // let user_info = document.querySelectorAll(".user_info")
+        // let sbmbutton = document.querySelector(".sbmbutton")
+
+
+
+
+        // user_info.forEach(elem => {
+
+        //     elem.addEventListener('keyup', (e) => {
+        //         if (user_name.value != ' ' && user_number.value != ' ') {
+
+        //             e.preventDefault()
+        //             sbmbutton.style.background = " linear-gradient(270deg, #447AEC 0%, #2A5CDC 100%"
+        //             sbmbutton.addEventListener('click', (e) => {
+        //                 e.preventDefault()
+        //                 // getData();
+
+        //                 console.log(user_name.value)
+
+        //                 user_name.value == ' ' && user_number.value == ' '
+        //                 window.location.href = 'thanku.html';
+
+
+        //             })
+
+        //         }
+
+        //     })
+        // })
+
+
+
+
+
+        // async function getData() {
+        //     const dat = await sb.from("users_feedback").select();
+        //     console.log(dat);
+        // }
+
+
+
+
+
+
+
+
+
+
+        // no_feedback_submit_button.addEventListener("click", () => {
+        //     window.location.href = 'thanku.html';
+        // })
+
+
+    </script>
+    <script src="index.js" type="module"></script>
+    <script src="fixedbar.js"></script>
+
+    <!-- <script src="supabase.js"></script> -->
+</body>
+
+</html>
