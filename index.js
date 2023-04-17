@@ -271,7 +271,7 @@ sbmbutton.addEventListener('click', (e) => {
         }
     }
 
-    getData()
+//     getData()
 
   setTimeout(() => {
     window.location.href = 'thanku.html';
@@ -303,7 +303,7 @@ sbmbutton.addEventListener('click', (e) => {
         }
     }
 
-    getData()
+//     getData()
 
     setTimeout(() => {
         window.location.href = 'thanku.html';
@@ -316,29 +316,29 @@ sbmbutton.addEventListener('click', (e) => {
 
 
 
-    const sb = supabase.createClient('https://qopwvyhgswjzhujqqbfa.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFvcHd2eWhnc3dqemh1anFxYmZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODEzNzUxODksImV4cCI6MTk5Njk1MTE4OX0.kksfMR19xFb5CZkYw9MOb8tFF8p3UE5uAtIPGgT2t4g')
+//     const sb = supabase.createClient('https://qopwvyhgswjzhujqqbfa.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFvcHd2eWhnc3dqemh1anFxYmZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODEzNzUxODksImV4cCI6MTk5Njk1MTE4OX0.kksfMR19xFb5CZkYw9MOb8tFF8p3UE5uAtIPGgT2t4g')
 
 
 
-async function getData() {
-    // if(user_number_data.value=="") user_number_data.value == "No Details"
-    // if(user_name_data.value=="") user_name_data.value == "No Details"
+// async function getData() {
+//     // if(user_number_data.value=="") user_number_data.value == "No Details"
+//     // if(user_name_data.value=="") user_name_data.value == "No Details"
 
-    const { data, error } = await sb
-        .from('users_feedback')
-        .insert(
-            {
-                emoji_react: feeback_page_emoji,
-                ciagrette_name: user_ciagrette_name,
-                customer_number:user_number_data.value,
-                did_you_get:user_did_u_get,
-                customer_name:user_name_data.value,
-                contact:user_feed,
-                shopping_exp:user_shopping_experience
-            }
-        )
+//     const { data, error } = await sb
+//         .from('users_feedback')
+//         .insert(
+//             {
+//                 emoji_react: feeback_page_emoji,
+//                 ciagrette_name: user_ciagrette_name,
+//                 customer_number:user_number_data.value,
+//                 did_you_get:user_did_u_get,
+//                 customer_name:user_name_data.value,
+//                 contact:user_feed,
+//                 shopping_exp:user_shopping_experience
+//             }
+//         )
 
-    if (data) {
-        console.log(data);
-    }
-}
+//     if (data) {
+//         console.log(data);
+//     }
+// }
